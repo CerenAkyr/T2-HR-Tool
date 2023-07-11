@@ -6,6 +6,7 @@ import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import Paper from '@mui/material/Paper';
 import EditActionButton from './EditActionButton';
+import DeleteIconButton from './DeleteIconButton';
 
 function ListUsersTable() {
 
@@ -53,7 +54,7 @@ function ListUsersTable() {
                             <TableCell align="center">{row.email}</TableCell>
                             <TableCell align="center">{row.birthDate}</TableCell>
                             <TableCell align="center">{row.gender}</TableCell>
-                            <TableCell align="center">action btn gelecek</TableCell>
+                            <TableCell align="center"><EditActionButton /> <DeleteIconButton /> </TableCell>
                         </TableRow>
                     ))}
                 </TableBody>
